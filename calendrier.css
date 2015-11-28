@@ -1,0 +1,35 @@
+* { 
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: helvetica,arial,sans-serif;
+}
+footer, section, header {
+	display: block;
+	background: darkgreen;
+}
+section {
+	width: 1200px;
+	height: 650px;
+	position: relative;
+	border-width : 3px;
+	border-style: solid;
+	border-color : black;
+}
+li {
+	position: absolute;
+	background-color: red;
+	border-width: 2px;
+	border-color : white;
+	border-style : solid;
+	list-style: none;
+	color: white;
+}
+    #normal{
+	width: 60px;
+	height: 60px;
+}
+    #kingsize{
+	width: 120px;
+	height: 120px;
+}

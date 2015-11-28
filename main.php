@@ -25,22 +25,19 @@
 			<h1 align="center" >Calendrier de l'avent des assos</h1>
 		</div>
 		<div id="calendrier-container">
-			<ol>
 			<?php 
-				$width = 700;
-				$height = 800;
-				for ($i=0;$i<24;$i++) {
-					echo "Louise est folle";
-				  $x = rand(10,$width-10);
-				  $y = rand(10,$width-10);
-			?>
-				 <li style="left:<?php echo $x;?>px;top:<?php echo $y;?>px">
-					<a href=""><?php echo $i?+1;?></a>
-				</li>
-			<?php
-				}
-			?>
-			</ol>
+echo '<ol>';
+$width = 700;
+$height = 800;
+for ($i=0;$i<24;$i++) {
+  $x = rand(10,$width-10);
+  $y = rand(10,$width-10);
+  echo '<li style="left:'.$x.'px;top:'.$y.'px">'.
+          '<a href="index.php?day='.($i+1).'">'.($i+1).'</a>'.
+       '</li>';
+}
+echo '</ol>';
+?>
 		</div>
 	</body>
 </html>
