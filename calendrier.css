@@ -26,10 +26,16 @@ li {
 	color: white;
 }
     #normal{
+    z-index: 2;
 	width: 60px;
 	height: 60px;
 }
     #kingsize{
+    z-index: 2;
 	width: 120px;
 	height: 120px;
 }
+    #ouvert{
+    z-index: 1;
+    width: 1100px;
+    height: 650px;
